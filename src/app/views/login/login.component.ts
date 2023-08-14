@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClientService, RequestParameters } from 'src/app/services/common/http-client-service';
+import { HttpClientBaseService, RequestParameters } from 'src/app/services/common/http-client-service';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +8,7 @@ import { HttpClientService, RequestParameters } from 'src/app/services/common/ht
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private httpClientService: HttpClientService) { }
+  constructor(private httpClientService: HttpClientBaseService) { }
   
   ngOnInit(): void {
     
